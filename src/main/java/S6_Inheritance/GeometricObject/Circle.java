@@ -2,12 +2,15 @@ package S6_Inheritance.GeometricObject;
 
 public class Circle extends Shape {
     private double radius = 1.0;
+
     public Circle() {
 
     }
+
     public Circle(double radius) {
         this.radius = radius;
     }
+
     public Circle(double radius, String color, boolean filled) {
         super(color, filled);
         this.radius = radius;
@@ -22,17 +25,18 @@ public class Circle extends Shape {
     }
 
     public double getArea() {
-        return Math.PI * radius * radius;
+        return Math.PI * radius * 2;
     }
 
     public double getPerimeter() {
-        return 2 * Math.PI * radius;
+        return Math.PI * radius * radius;
     }
 
     @Override
     public String toString() {
-        return "A Circle with radius= "
-                + radius + ", which is a subclass of "
+        return "A circle with radius = "
+                + radius
+                + ", wich a subclass of "
                 + super.toString();
     }
 

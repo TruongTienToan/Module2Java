@@ -9,7 +9,11 @@ public class Point3D extends Point2D{
 
     }
 
-    public Point3D(float x, float y, float z) {
+    public Point3D(float z) {
+        this.z = z;
+    }
+
+    public Point3D(float z ,float x, float y) {
         super(x, y);
         this.z = z;
     }
@@ -22,13 +26,13 @@ public class Point3D extends Point2D{
         this.z = z;
     }
 
-    public void setXYZ(float x, float y, float z){
+    public void setXYZ(float z, float x, float y) {
+        this.z = z;
         this.getX();
         this.getY();
-        this.z = z;
     }
 
-    public float[] getXYZ(){
+    public float[] getXYZ() {
         float[]arr = {getX(), getY(), this.z};
         return arr;
     }

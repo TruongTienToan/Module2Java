@@ -8,7 +8,7 @@ public class Point {
 
     }
 
-    public Point(float x, float y){
+    public Point(float x, float y) {
         this.x = x;
         this.y = y;
     }
@@ -35,16 +35,16 @@ public class Point {
     }
 
     public float[] getXY() {
-        float[] array = {x, y};
-        return array;
+        float[] arr = {x,y};
+        return arr;
     }
 
     @Override
     public String toString() {
         return "Point{"
-                + "x = "
+                + "x="
                 + x
-                + ", y = "
+                + ", y="
                 + y
                 + "}";
     }
@@ -53,7 +53,7 @@ public class Point {
         Point point = new Point();
         System.out.println(point);
 
-        point = new Point(20, 7.7f);
+        point = new Point(9.8f, 8.9f);
         System.out.println(point);
     }
 }

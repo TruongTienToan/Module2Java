@@ -29,23 +29,28 @@ public class Point2D {
         this.y = y;
     }
 
-    public void setXY(float x, float y){
+    public void setXY(float x, float y) {
         this.x = x;
         this.y = y;
     }
 
-    public float[] getXY(){
+    public float[] getXY() {
         float[]arr = {this.x, this.y};
         return arr;
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "Point2D{"
                 + "x="
                 + x
                 + ", y="
-                + y
-                + "}";
+                +y
+                +"}";
+    }
+
+    public static void main(String[] args) {
+        Point2D point2D = new Point2D(5.6f, 6.5f);
+        System.out.println(point2D.toString());
     }
 }

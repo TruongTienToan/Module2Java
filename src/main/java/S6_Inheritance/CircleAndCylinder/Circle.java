@@ -4,7 +4,7 @@ public class Circle {
     private double radius;
     public String color = "Red";
 
-    public Circle(){
+    public Circle() {
 
     }
 
@@ -32,9 +32,10 @@ public class Circle {
     public double getArea() {
         return Math.PI * radius * radius;
     }
+
     @Override
     public String toString() {
-        return " radius = " + radius + ", color = " + color;
+        return "radius = " + radius + ", color = " + color;
     }
 
     public static void main(String[] args) {

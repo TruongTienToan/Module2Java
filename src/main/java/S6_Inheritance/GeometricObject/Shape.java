@@ -1,7 +1,7 @@
 package S6_Inheritance.GeometricObject;
 
 public class Shape {
-    private String color = "Green";
+    private String color = "green";
     private boolean filled = true;
 
     public Shape() {
@@ -17,12 +17,12 @@ public class Shape {
         return color;
     }
 
-    public void setColor(String color) {
-        this.color = color;
-    }
-
     public boolean isFilled() {
         return filled;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 
     public void setFilled(boolean filled) {
@@ -31,14 +31,17 @@ public class Shape {
 
     @Override
     public String toString() {
-        return "A Shape with color of " + getColor() + " and " + (isFilled() ? "filled " : "not filled ");
+        return "A shape with color of "
+                + color
+                + " and "
+                + (isFilled() ? "filled" : "not filled");
     }
 
-    public static void main(String[] args) {
-        Shape shape = new Shape();
-        System.out.println(shape);
+        public static void main(String[] args) {
+            Shape shape = new Shape();
+            System.out.println(shape);
 
-        shape = new Shape("Red", false);
-        System.out.println(shape);
+            shape = new Shape("red", false);
+            System.out.println(shape);
+        }
     }
- }

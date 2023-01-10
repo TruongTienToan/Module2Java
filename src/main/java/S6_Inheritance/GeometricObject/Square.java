@@ -27,18 +27,18 @@ public class Square extends Rectangle {
         setSide(width);
     }
 
-    @Override
     public void setLength(double length) {
         setSide(length);
     }
 
     @Override
     public String toString() {
-        return "A Square with side = "
+        return "A Square with side="
                 + getSide()
                 + ", which is a subclass of "
                 + super.toString();
     }
+
 
     public static void main(String[] args) {
         Square square = new Square();

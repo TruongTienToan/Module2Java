@@ -3,7 +3,8 @@ package S6_Inheritance.GeometricObject;
 public class Rectangle extends Shape {
     private double width = 1.0;
     private double length = 1.0;
-    public Rectangle(){
+
+    public Rectangle() {
 
     }
 
@@ -12,7 +13,7 @@ public class Rectangle extends Shape {
         this.length = length;
     }
 
-    public Rectangle(double width, double length, String color, boolean filled) {
+    public Rectangle( double width, double length, String color, boolean filled) {
         super(color, filled);
         this.width = width;
         this.length = length;
@@ -39,15 +40,15 @@ public class Rectangle extends Shape {
     }
 
     public double getPerimeter() {
-        return 2 * (width + length);
+        return (width + length) * 2;
     }
 
     @Override
     public String toString() {
-        return "A Rectangle with width = "
-                + getWidth()
+        return "A rectangle width = "
+                + width
                 + " and length = "
-                + getLength()
+                + length
                 + ", which is a subclass of "
                 + super.toString();
     }
@@ -59,7 +60,7 @@ public class Rectangle extends Shape {
         rectangle = new Rectangle(2.3, 5.8);
         System.out.println(rectangle);
 
-        rectangle = new Rectangle(2.5, 3.8, "orange", true);
+        rectangle = new Rectangle(2.5, 3.8, "orange", false);
         System.out.println(rectangle);
     }
 }

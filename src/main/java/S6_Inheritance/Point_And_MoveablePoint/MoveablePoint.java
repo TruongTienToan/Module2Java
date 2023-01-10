@@ -8,8 +8,13 @@ public class MoveablePoint extends Point {
 
     }
 
+    public MoveablePoint(float xSpeed, float ySpeed) {
+        this.xSpeed = xSpeed;
+        this.ySpeed = ySpeed;
+    }
+
     public MoveablePoint(float x, float y, float xSpeed, float ySpeed) {
-        super(x,y);
+        super(x, y);
         this.xSpeed = xSpeed;
         this.ySpeed = ySpeed;
     }
@@ -36,8 +41,8 @@ public class MoveablePoint extends Point {
     }
 
     public float[] getSpeed() {
-        float[] array = {xSpeed, ySpeed};
-        return array;
+        float[] arr = {xSpeed, ySpeed};
+        return arr;
     }
 
     @Override
@@ -50,7 +55,7 @@ public class MoveablePoint extends Point {
                 + "}";
     }
 
-    public MoveablePoint move (){
+    public MoveablePoint move(){
         super.setX(super.getX() + xSpeed);
         super.setY(super.getY() + ySpeed);
         return this;
@@ -60,7 +65,7 @@ public class MoveablePoint extends Point {
         MoveablePoint mvp = new MoveablePoint();
         System.out.println(mvp);
 
-        mvp = new MoveablePoint(10.5f,4,32.5f,12.8f);
+        mvp = new MoveablePoint(10.5f, 6.4f, 5.3f, 9.6f);
         System.out.println(mvp);
     }
 }
