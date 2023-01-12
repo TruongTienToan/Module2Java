@@ -1,5 +1,7 @@
 package S7_AbstractClass_And_Interface.InterfaceComparable;
 
+import S6_Inheritance.GeometricObject.Circle;
+
 public class ComparableCircle extends Circle implements Comparable<ComparableCircle>{
     public ComparableCircle() {
 

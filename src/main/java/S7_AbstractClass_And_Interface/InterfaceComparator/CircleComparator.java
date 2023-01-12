@@ -1,6 +1,6 @@
 package S7_AbstractClass_And_Interface.InterfaceComparator;
 
-import S7_AbstractClass_And_Interface.InterfaceComparable.Circle;
+import S6_Inheritance.GeometricObject.Circle;
 
 import java.util.Comparator;
 
