@@ -4,7 +4,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class FizzBuzzTest {
+class FizzBuzzTest {
+
     @Test
     void testFizz3() {
         int number = 3;
