@@ -3,11 +3,24 @@ package S10_DSA.DanhSach.LinkedListSimple;
 import org.w3c.dom.Node;
 
 public class MyLinkedList {
-    private Node head;
     private int numNodes;
+    private Node head;
 
     public MyLinkedList(Object data) {
         head = new Node(data);
+    }
+
+    public class Node {
+        private Node next;
+        private Object data;
+
+        public Node(Object data) {
+            this.data = data;
+        }
+
+        public Object getData() {
+            return this.data;
+        }
     }
 
     public void add(int index, Object data) {
@@ -32,7 +45,7 @@ public class MyLinkedList {
 
     public Node get(int index) {
         Node temp = head;
-        for (int i = 0; i < index; i++) {
+        for (int i = 0; i < index; i++){
             temp = temp.next;
         }
         return temp;
@@ -43,19 +56,6 @@ public class MyLinkedList {
         while (temp != null) {
             System.out.println(temp.data);
             temp = temp.next;
-        }
-    }
-
-    private class Node {
-        private Node next;
-        private final Object data;
-
-        public Node(Object data) {
-            this.data = data;
-        }
-
-        public Object getData() {
-            return this.data;
         }
     }
 }
